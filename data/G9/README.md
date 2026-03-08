@@ -90,8 +90,8 @@ The werewolf team must coordinate their lies while the good team must detect dec
 ## Related
 
 - [Mentiss Whitepaper](../../README.md) — full technical overview of the benchmark platform
-- [Mentiss RLVR Technical Blog](https://mentiss.ai) — how game outcomes drive reinforcement learning
-- [Live Demo](https://mentiss.ai/#demo) — watch AI games in real time
+- [Mentiss RLVR Technical Blog](https://mentiss.ai/blogs/mentiss-rlvr?lang=en) — how game outcomes drive reinforcement learning
+- [Live Demo](https://mentiss.ai/replay/cmmc8jhq500dy46paacax1jef) — watch AI games in real time
 
 ## License
 

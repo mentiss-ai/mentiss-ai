@@ -90,8 +90,8 @@ data/G9/{language}/{goodModel}/{evilModel}/{gameId}.md
 ## 相关链接
 
 - [Mentiss 白皮书](../../README.zh-CN.md) — 基准测试平台的完整技术概述
-- [Mentiss RLVR 技术博客](https://mentiss.ai) — 游戏结果如何驱动强化学习
-- [在线演示](https://mentiss.ai/#demo) — 实时观看 AI 对局
+- [Mentiss RLVR 技术博客](https://mentiss.ai/blogs/mentiss-rlvr?lang=zh) — 游戏结果如何驱动强化学习
+- [在线演示](https://mentiss.ai/replay/cmmbpi82m001u46pavkmt1nq7) — 实时观看 AI 对局
 
 ## 许可证
 
