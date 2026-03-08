@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="https://img.shields.io/badge/lang-English-blue" alt="English"> <a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/lang-中文-red" alt="中文"></a>
+
+</div>
+
 # G9 Standard Benchmark — God View Logs
 
 This directory contains **240 complete god-view game logs** from Mentiss's 9-player Standard Benchmark. Each file records an entire Werewolf game from an omniscient perspective: every night action, every daytime speech, every vote, and the final outcome.
