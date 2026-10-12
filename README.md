@@ -4,19 +4,21 @@
 
 </div>
 
-# Mentiss Whitepaper
+# Mentiss Whitepaper — AI Werewolf & Social Intelligence Benchmark
 
-## Social Intelligence Benchmark Platform
+Mentiss combines a multilingual **Werewolf (Mafia) game with AI players** and a **social intelligence benchmark for large language models**. Play a social deduction game in your browser, then explore how hidden roles, dialogue, voting, and game outcomes help evaluate reasoning, persuasion, deception detection, and strategy.
+
+[Play Werewolf with AI](https://werewolf.mentiss.ai/en) · [Mentiss benchmark platform](https://mentiss.ai/en) · [Read the benchmark report](https://mentiss.ai/en/blogs/benchmark-report) · [中文白皮书](./README.zh-CN.md)
 
 ## TL;DR
 
 **Mentiss evaluates AI's true logical and reasoning abilities through "Werewolf"**
 
-1. **Zero-Sum Game Benchmark**: Objectively reflects model's general reasoning capabilities in a strict zero-sum competitive scenario. Since every game is a fresh dynamic game, models cannot game the leaderboard through "memorization."
+1. **Zero-Sum Game Benchmark**: Uses competitive game outcomes to evaluate reasoning and strategy. Dynamic role assignments and dialogue go beyond a fixed question bank.
 
 2. **Dual-Source Synthesis Data Engine**: Generates massive synthetic data through AI Self-Play, combined with Human vs AI hybrid matches that inject real-world decision diversity and linguistic anchors.
 
-3. **Social Intelligence RLVR**: We designed a specialized RLVR (Reinforcement Learning with Verifiable Rewards) methodology for social intelligence that automatically scores AI's natural language response quality through game outcomes, enabling models to learn persuasion, deception detection, and trust-building social abilities. See: <a href="https://mentiss.ai/blogs/mentiss-rlvr?lang=en" target="_blank">Mentiss RLVR Technical Blog</a>
+3. **Social Intelligence RLVR**: We designed a specialized RLVR (Reinforcement Learning with Verifiable Rewards) methodology for social intelligence that automatically scores AI's natural language response quality through game outcomes, enabling models to learn persuasion, deception detection, and trust-building social abilities. See: <a href="https://mentiss.ai/en/blogs/mentiss-rlvr" target="_blank">Mentiss RLVR Technical Blog</a>
 
 4. **From Games to General Intelligence**: When AI's win rate against humans reaches theoretical limits, Mentiss calls this the "AlphaGo moment for Werewolf" — we can consider AI has mastered the pinnacle of "linguistic" intelligence.
 
@@ -26,17 +28,84 @@
 
 ## Table of Contents
 
-1. [Industry Pain Points](#industry-pain-points)
-2. [Mentiss Product Architecture](#mentiss-product-architecture)
+1. [Product Videos](#product-videos)
+2. [Game Screenshots](#game-screenshots)
+3. [Industry Pain Points](#industry-pain-points)
+4. [Mentiss Product Architecture](#mentiss-product-architecture)
    - [Layer 1: Social Intelligence Benchmark](#layer-1-social-intelligence-benchmark)
    - [Layer 2: Synthesis Data Engine](#layer-2-synthesis-data-engine)
    - [Layer 3: Iteration Loop](#layer-3-iteration-loop)
    - [Layer 4: AGI Safety Research](#layer-4-agi-safety-research)
-3. [Werewolf Game Platform](#werewolf-game-platform)
-4. [Current Benchmark Results](#current-benchmark-results)
-5. [Technical Methodology](#technical-methodology)
-6. [Business Vision and Future Outlook](#business-vision-and-future-outlook)
-7. [Conclusion](#conclusion)
+5. [Werewolf Game Platform](#werewolf-game-platform)
+   - [Game Modes](#game-modes)
+   - [Role System](#role-system)
+   - [Historical Benchmark Configurations](#historical-benchmark-configurations)
+6. [Published Benchmark Results](#published-benchmark-results)
+7. [Technical Methodology](#technical-methodology)
+8. [Business Vision and Future Outlook](#business-vision-and-future-outlook)
+9. [Conclusion](#conclusion)
+10. [Explore Mentiss](#explore-mentiss)
+
+---
+
+## Product Videos
+
+See the game interface and AI players in the English and Chinese introductions. Click a preview to watch on YouTube.
+
+<table>
+  <tr>
+    <th width="50%">English</th>
+    <th width="50%">中文</th>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://www.youtube.com/watch?v=LsNosPbJxHk"><img src="https://i.ytimg.com/vi/LsNosPbJxHk/hqdefault.jpg" alt="Watch the English Mentiss AI Werewolf introduction on YouTube" width="420"></a></td>
+    <td width="50%"><a href="https://www.youtube.com/watch?v=L4P9Zvb_0tU"><img src="https://i.ytimg.com/vi/L4P9Zvb_0tU/hqdefault.jpg" alt="在 YouTube 观看 Mentiss AI 狼人杀中文介绍视频" width="420"></a></td>
+  </tr>
+</table>
+
+[Watch in English](https://www.youtube.com/watch?v=LsNosPbJxHk) · [观看中文介绍](https://www.youtube.com/watch?v=L4P9Zvb_0tU)
+
+---
+
+## Game Screenshots
+
+The live game brings illustrated characters, a village setting, and gold-framed controls to desktop and mobile. These screenshots were captured on **October 11, 2026**; smaller screens show the mobile views.
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-gameplay-mobile.jpg">
+    <img src="./assets/en/werewolf-gameplay-desktop.jpg" alt="Mentiss Werewolf game log and illustrated player roster, including Magician and the Wolf Brothers; mobile view shows the Players drawer" width="900">
+  </picture>
+</p>
+
+**Follow the game.** Desktop combines notes, round-by-round logs, and seat portraits; mobile opens the roster in a Players drawer. [View this public Brawl match](https://werewolf.mentiss.ai/en/play/9d24d447-309a-40ed-9a36-0edc171f22b6).
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-home-mobile.jpg">
+    <img src="./assets/en/werewolf-home-desktop.jpg" alt="Mentiss AI Werewolf home screen with the moonlit village and Start Game button" width="900">
+  </picture>
+</p>
+
+**Enter the village.** [Play Werewolf with AI](https://werewolf.mentiss.ai/en).
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-setup-mobile.jpg">
+    <img src="./assets/en/werewolf-setup-desktop.jpg" alt="Mentiss Werewolf custom game setup with new Town and Werewolf role choices on desktop and mobile" width="900">
+  </picture>
+</p>
+
+**Choose your board.** Select a game configuration and explore the expanded role lineup. [Open game setup](https://werewolf.mentiss.ai/en/new).
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-review-mobile.jpg">
+    <img src="./assets/en/werewolf-review-desktop.jpg" alt="Mentiss Werewolf review interface with game and seat selection and God View log on desktop and mobile" width="900">
+  </picture>
+</p>
+
+**Review a match.** Select a seat, inspect the God View log, and access the review conversation after signing in. [Open the review page](https://werewolf.mentiss.ai/en/review).
 
 ---
 
@@ -49,7 +118,7 @@ On the path toward AGI (Artificial General Intelligence), existing AI evaluation
 | Challenge                           | Traditional Approach                                           | Mentiss Solution                                                   |
 | ----------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------ |
 | **Black-Box Evaluation & Subjective Marketing** | Tech companies rely on self-selected metrics for marketing, lacking standardized third-party verification | Zero-sum game outcomes as the only objective standard, providing reproducible third-party evaluation |
-| **Data Contamination & Memorization Illusion** | Benchmark questions exist in training sets, AI is "memorizing answers" not "reasoning" | 2,500+ role combinations ensure every game is a new scenario, impossible to cheat through memorization |
+| **Data Contamination & Memorization Illusion** | Benchmark questions exist in training sets, AI is "memorizing answers" not "reasoning" | Dynamic role assignments and evolving dialogue create fresh scenarios instead of a fixed question bank |
 | **Quantification Challenge for Language Abilities** | Evaluating persuasiveness and deception detection relies on expensive human review or subjective judgment | Automatically quantify language abilities through game metrics like voting outcomes and trust scores |
 | **Static Scenarios & Social Intelligence Vacuum** | Static Q&A datasets cannot test dynamic adaptation abilities | Real-time multi-agent games test persuasion, hidden intent, and alliance-building abilities |
 | **Model Autophagy Disorder (MAD)** | AI training on its own generated data gradually "degenerates" | Multi-model heterogeneous games + human player injection maintains data distribution freshness |
@@ -82,7 +151,7 @@ This is a cutting-edge benchmark layer for evaluating Large Language Models' (LL
 
 - **True Zero-Sum Game**: Converts semantic capabilities into objective win-rate matrices and deep behavioral analysis, rejecting subjective scoring
 - **Dynamic Strategy Lab**: Forces models to engage in continuous chain-of-thought reasoning, testing their logical consistency and emergent abilities in complex multi-round strategies
-- **Anti-Contamination Mechanism**: 2,500+ role combinations ensure every game is a fresh scenario, eliminating false high scores from pre-training memory
+- **Dynamic Evaluation Scenarios**: Role assignments, dialogue, and multi-round decisions reduce reliance on memorizing a fixed set of questions
 - **BYOM Support**: Supports bring-your-own-model for objective, quantitative evaluation
 - **Multi-Dimensional Assessment**: Records not just wins/losses, but analyzes every decision, every statement, every action
 
@@ -132,7 +201,7 @@ Mentiss established a metrics system to measure AI's comprehensive performance i
 
 </div>
 
-**Mentiss's Unique Advantage**: Compared to basic Avalon/Mafia, Mentiss features 15 complex roles (Alpha Wolf, Snow Wolf, Wraith Knight, Gargoyle, Seer, Witch, Hunter, etc.), forming 2,500+ role combinations, massively increasing strategic depth and language expression complexity. More importantly, Mentiss transforms Werewolf into a systematic AI benchmark platform, providing a complete RLVR training framework, automated evaluation system, and synthetic data generation capability — this is the only complex environment that fully integrates "language understanding, strategic reasoning, and psychological gaming" with scalable training.
+**Mentiss's Unique Advantage**: The playable game now implements 24 role types, including Mechanical Wolf, Nightmare, the Wolf Brothers, Dreamer, Psychic, and Magician. Their interactions add hidden information and strategic choices to language-driven play. The published 15-role Ultimate Trial configuration produced 2,520 roster combinations before seating assignments. Mentiss connects this game environment with evaluation, synthetic data generation, and research into verifiable rewards for social reasoning.
 
 ---
 
@@ -174,7 +243,7 @@ This is a complete feedback loop that drives continuous refinement of models' st
 
 Natural language — the art of effective communication in uncertain, adversarial environments — is one of the missing pieces on the path to AGI. Mathematics and code gave us verifiable reasoning; we believe **social games can give us verifiable natural language intelligence**.
 
-> For detailed technical explanations, please see: <a href="https://mentiss.ai/blogs/mentiss-rlvr" target="_blank">Mentiss RLVR Technical Blog</a>
+> For detailed technical explanations, please see: <a href="https://mentiss.ai/en/blogs/mentiss-rlvr" target="_blank">Mentiss RLVR Technical Blog</a>
 
 #### RLVR Methodology: Verifying the Unverifiable
 
@@ -274,112 +343,87 @@ Werewolf, as a game requiring deception, persuasion, and hidden intent, provides
 
 ## Werewolf Game Platform
 
-Mentiss provides a complete Werewolf game platform supporting multiple game modes and rich role configurations.
+[Mentiss Werewolf](https://werewolf.mentiss.ai/en) is a browser game for playing social deduction with AI and other people. AI players fill empty seats, discuss the game, bluff, use their roles' abilities, and vote. You can play alone, invite friends to a private room, or join a public room from the Lobby.
 
-**Why Build a Game Platform?**
-
-Mentiss's game platform is not just an evaluation tool, but an experimental playground full of fun:
-
-1. **Humans Test AI Capability Boundaries**: Let human players directly compete against AI to authentically verify whether AI has reached the "AlphaGo moment for Werewolf" — when even professional players struggle to defeat AI, we know AI has reached theoretical limits in social reasoning.
-
-2. **From Boring to Interesting**: The Mentiss founder's philosophy is simple — **Benchmarks may be too academic, but why not build a playground to play with AI?** Exploring AI capabilities through games, advancing technology through entertainment — this is Mentiss's original intent.
+The village interface combines illustrated seat portraits, day and night backgrounds, game logs, player information, and action controls. On desktop, notes, the game log, and players sit in resizable columns. On smaller screens, the log and controls remain in the main column while Players and Notes open from side tabs. Completed games support God View and individual player perspectives, making it easier to compare what happened with what a particular player knew.
 
 ### Game Modes
 
-#### 1. Proof of Concept - 6 Players
+| Mode | Configuration and purpose |
+| --- | --- |
+| **Standard 6-Player** | Seer, Witch, 2 Villagers, and 2 Werewolves; a compact introduction to the game. |
+| **Standard 9-Player** | Seer, Witch, Hunter, 3 Villagers, and 3 Werewolves; the familiar Standard Benchmark roster. |
+| **Themed 10 / 12-Player Games** | Preset boards built around Mechanical Wolf and Psychic; Nightmare and Guard; Alpha Wolf and Dreamer; Alpha Wolf and Magician; Wolf Brothers and Black Market Dealer; Wolf Beauty and Knight; Gargoyle and Gravekeeper; Blood Moon Herald and Demon Hunter; or Wraith Knight and Guard. |
+| **Brawl** | A random 10- or 12-player board. Seer, Witch, and Hunter are fixed; the server draws one extra Town power role and one special wolf configuration. Ordinary Werewolves and Villagers fill the remaining seats. Players must deduce the configuration during play. |
+| **Custom Game** | Choose 10 or 12 players, one extra Town power role, and one special wolf configuration around the fixed Seer / Witch / Hunter core. Select AI models for supported seats. |
+| **Human vs AI** | Control the entire Werewolf faction against AI Town players on a 10- or 12-player custom board. Some independent wolf roles are unavailable in this mode. |
+| **Agent Mode** | Watch an AI-only game from God View and give selected AI players your own strategic instructions. |
+| **Parallel Mode** | Compare two models playing the same role and choose which response to use after each action. |
+| **Bring Your Own Model (BYOM)** | Configure an OpenAI-compatible endpoint, API key, and model ID, then assign your model to game seats. |
 
-The most basic game configuration, suitable for quickly verifying model capabilities:
-
-- **Good Team**: Seer × 1, Witch × 1, Villager × 2
-- **Werewolf Team**: Werewolf × 2
-
-#### 2. Standard Benchmark - 9 Players
-
-Standard benchmark configuration with good balance:
-
-- **Good Team**: Hunter × 1, Seer × 1, Witch × 1, Villager × 3
-- **Werewolf Team**: Werewolf × 3
-
-#### 3. Ultimate Trial - 10 Players
-
-The most challenging configuration, specifically testing models' **Zero-Shot Reasoning** capabilities:
-
-- **Werewolf Team**: Randomly select 3 roles from「Alpha Wolf, Snow Wolf, Wraith Knight, Gargoyle, Blood Moon Herald, Werewolf」
-- **Good Team**: Randomly select 4 roles from「Seer, Witch, Hunter, Knight, Gravekeeper, Black Market Merchant, Demon Hunter, Guard, Villager」plus 3 fixed Villagers
-- **Core Challenge**: Eliminated players' identities are not revealed, models must infer role configuration based on information revealed during the game
-
-**Combinatorial Explosion**: Werewolf team 6 choose 3 = 20 types, Good team 9 choose 4 = 126 types, multiplied by seating arrangements, forming over **3.6 million+** starting states.
-
-**Why "Zero-Shot Reasoning"?** This role system barely exists in any LLM's pre-training dataset — models cannot rely on memory, must learn each role's abilities in real-time during the game and reason accordingly. This is the ultimate test of models' true reasoning capabilities.
-
-#### 4. Human vs AI
-
-Players control the Werewolf team, competing against AI-controlled Good team:
-
-- Test whether humans can deceive AI
-- Test whether AI can detect human deception
-- Generate high-value human-AI hybrid training data
-
-**The AlphaGo Moment for Werewolf**
-
-Human vs AI is not just entertainment, but the ultimate litmus test for measuring AI social intelligence. When AI's win rate against human professional players reaches theoretical limits, and human Pro players struggle to defeat AI, this will be the **AlphaGo moment for Werewolf** — marking that AI has reached or surpassed human level in linguistic reasoning, social gaming, psychological modeling, and other dimensions, truly mastering the pinnacle of "linguistic" intelligence.
-
-#### 5. Custom Game
-
-Fully customizable game configuration, supporting:
-
-- Freely select player count (6-21 players)
-- Freely configure role combinations
-- Select participating AI models
+Solo and multiplayer are play options for the supported game configurations. Eligible games also offer Sheriff elections and cross-round persistent memory. Availability depends on the selected board and billing mode; the launcher shows the options that apply.
 
 ### Role System
 
-Mentiss designed a rich role system to increase the game's strategic depth:
+The implemented game catalog contains **24 native role types: 11 Werewolf roles and 13 Town roles**. The Wolf Brothers occupy two separate seats. Sheriff is an elected office, and Lucky One is a skill granted by the Black Market Dealer; neither is an additional native role. A role's availability depends on the mode: Mechanical Wolf appears in its dedicated Psychic preset and is excluded from Custom and Brawl. Human vs AI additionally excludes Gargoyle, Nightmare, and the Wolf Brothers.
 
-#### Werewolf Team (6 Role Types)
+These summaries introduce the roles; use the [game rules](https://werewolf.mentiss.ai/en/play/rule) and [role guide](https://werewolf.mentiss.ai/en/play/roles) for detailed interactions and the configuration shown in the launcher.
 
-<div align="center">
+#### Werewolf Faction — 11 Role Types
 
-| Role                  | Special Ability                          |
-| --------------------- | ---------------------------------------- |
-| **Werewolf**          | Basic role, participates in night kills |
-| **Alpha Wolf**        | Can take someone down when eliminated    |
-| **Snow Wolf**         | Appears as good to the Seer              |
-| **Wraith Knight**     | Doesn't die at night, can counter-damage interactors |
-| **Gargoyle**          | Can check other players' true roles      |
-| **Blood Moon Herald** | Can make a final kill when voted out    |
+| Role | Core ability |
+| --- | --- |
+| **Werewolf** | Takes part in the pack's night kill; can self-target and self-destruct. |
+| **Alpha Wolf** | Can take another player down when eliminated, except when poisoned by the Witch. |
+| **Snow Wolf** | Appears as Town to Seer and Gravekeeper checks; other abilities can expose its true wolf faction. |
+| **Wraith Knight** | Immune to night deaths and can retaliate once against an eligible Town night interaction; cannot self-destruct. |
+| **Gargoyle** | Privately checks exact roles, acts outside the pack, and gains its own kill after the other wolves are gone. |
+| **Blood Moon Herald** | Makes a finishing kill when voted out as the last wolf; self-destructing blocks Town skills the following night. |
+| **Wolf Beauty** | Charms a Town player each night. Its death takes the charmed player down, except when the Knight defeats it in a daytime duel. |
+| **Elder Wolf Brother** | Joins the ordinary pack. Its confirmed death triggers the Younger Wolf Brother's awakening; cannot self-destruct. |
+| **Younger Wolf Brother** | Starts outside the pack and appears as Town to Seer checks while the elder lives. After the elder dies, gets one independent night kill and rejoins the pack. |
+| **Nightmare** | Privately fears another living player to block affected night skills; cannot fear the same seat on consecutive nights. |
+| **Mechanical Wolf** | Acts independently and copies one other player's role once per game, gaining supported copied abilities; inherits its own wolf kill after the pack is gone. |
 
-</div>
+#### Town Faction — 13 Role Types
 
-#### Good Team (9 Role Types)
+| Role | Core ability |
+| --- | --- |
+| **Seer** | Checks one player's faction each night. |
+| **Witch** | Has one antidote and one poison; cannot heal herself. |
+| **Hunter** | Can shoot on eligible deaths; Witch poison prevents the shot. |
+| **Knight** | Once per game, reveals its role and duels during its speech: a wolf dies, or the Knight dies if the target is Town. |
+| **Gravekeeper** | Learns the faction of the previous day's voted-out player. |
+| **Black Market Dealer** | From Night 2, grants one player a Seer check, Witch poison, or Hunter gun once per game; trading with a wolf kills the Dealer. |
+| **Demon Hunter** | From Night 2, hunts a player each night; kills wolves but dies if the target is Town. Wraith Knight survives the hunt and may retaliate. |
+| **Guard** | Protects a player from wolf kills; cannot protect the same seat on consecutive nights. |
+| **Magician** | Swaps two eligible seat numbers for the night, redirecting targeted abilities between them; each successfully used seat can be chosen only once. |
+| **Village Idiot** | May reveal its card to survive a daytime vote, retaining speech but losing voting rights and leaving the victory count. |
+| **Dreamer** | Makes another player an unaware sleepwalker protected from ordinary night damage; consecutive selections cause a dream kill, and the Dreamer's night death takes its sleepwalker down. |
+| **Psychic** | Privately learns a living player's exact role each night; a copied Mechanical Wolf appears as the role it copied. |
+| **Villager** | Has no special ability; contributes through reasoning, speech, and voting. |
 
-<div align="center">
+### Historical Benchmark Configurations
 
-| Role                     | Special Ability                                 |
-| ------------------------ | ----------------------------------------------- |
-| **Seer**                 | Check one player's faction each night           |
-| **Witch**                | Possesses one antidote and one poison           |
-| **Hunter**               | Can shoot someone when dying                    |
-| **Knight**               | Can initiate a duel check during the day        |
-| **Gravekeeper**          | Learns the faction of previous day's voted-out player |
-| **Black Market Merchant** | Can grant abilities to other players            |
-| **Demon Hunter**         | Hunt one person each night, target eliminated if they're a werewolf |
-| **Guard**                | Protect one person from werewolf kills each night |
-| **Villager**             | No special abilities, relies on logical reasoning |
+The benchmark tables below retain their published configurations and results as of **January 13, 2026**. The expanded game catalog and current Brawl settings should not be treated as the role pool used to produce those results.
 
-</div>
+| Benchmark | Published configuration |
+| --- | --- |
+| **Proof of Concept — 6 Players** | Seer, Witch, 2 Villagers vs 2 Werewolves. |
+| **Standard Benchmark — 9 Players** | Hunter, Seer, Witch, 3 Villagers vs 3 Werewolves. |
+| **Ultimate Trial — 10 Players** | 3 wolves drawn from the historical 6-role wolf pool; 4 Town roles drawn from the historical 9-role Town pool, plus 3 fixed Villagers. Eliminated identities were not revealed. |
+
+The historical Ultimate Trial wolf pool was **Alpha Wolf, Snow Wolf, Wraith Knight, Gargoyle, Blood Moon Herald, and Werewolf**. Its Town pool was **Seer, Witch, Hunter, Knight, Gravekeeper, Black Market Dealer, Demon Hunter, Guard, and Villager**. That 15-role configuration yields **20 × 126 = 2,520 roster combinations**, with the original whitepaper reporting **3.6 million+ starting states** when seating arrangements are included. Those figures describe that configuration, rather than the size of the current game catalog.
 
 ### Multi-Language Support
 
-Mentiss platform supports game and log output in 8 languages:
-
-🇨🇳 中文 | 🇺🇸 English | 🇹🇼 繁體中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇫🇷 Français | 🇪🇸 Español | 🇸🇦 العربية
+The interface and game/log language options include Simplified Chinese, English, Traditional Chinese, Japanese, Korean, French, Spanish, and Arabic. A recorded game retains the language in which it was played.
 
 ---
 
-## Current Benchmark Results
+## Published Benchmark Results
 
-Mentiss has conducted systematic benchmark testing on mainstream Large Language Models. Here are the latest test results:
+The tables and charts below are the **published benchmark snapshot as of January 13, 2026**. They retain the original model versions, game counts, and win rates; the product and screenshots above were updated on October 11, 2026. See the [benchmark report](https://mentiss.ai/en/blogs/benchmark-report) for the published evaluation details.
 
 ### Standard Benchmark Results
 
@@ -432,17 +476,17 @@ To ensure benchmark fairness and scientific rigor, Mentiss adopts the following 
 - ✅ **True Performance**: Win rate accurately reflects individual model capabilities
 - ✅ **Fair Evaluation**: All models compete under identical conditions
 
-### Key Insights
+### Insights from These Tests
 
-1. **OpenAI GPT-5 Series Leads**: Ranked first in both Standard Benchmark and Zero-Shot Reasoning tests, demonstrating powerful social intelligence and strategic reasoning capabilities.
+1. **OpenAI GPT-5 Series Led This Snapshot**: Ranked first in both Standard Benchmark and Zero-Shot Reasoning tests, demonstrating powerful social intelligence and strategic reasoning capabilities.
 
-2. **Zero-Shot Reasoning More Discriminative**: In Ultimate Trial mode, differences between models are more pronounced, proving this mode effectively tests models' true reasoning abilities rather than memorization.
+2. **Configuration Matters**: Standard Benchmark and Ultimate Trial use different rosters and sample sizes. Interpret win rates within each configuration; outcomes alone do not establish whether a model memorized a strategy.
 
 3. **Reasoning Models Perform Better**: Models with stronger reasoning capabilities (like GPT-5.2-pro, Claude Opus 4.5) perform exceptionally well in zero-shot scenarios.
 
 4. **Still Huge Room for Improvement**: Even the best models still have approximately 25% failure rate in complex social reasoning scenarios, indicating social intelligence remains an important frontier in AI development.
 
-> 📖 **More Game Logs**: You can view complete match records and AI decision-making processes at <a href="https://mentiss.ai/#demo" target="_blank">https://mentiss.ai/#demo</a>.
+> 📖 **Explore Match Records**: Browse [public player games](https://werewolf.mentiss.ai/en/games) or inspect the [archived G9 Standard Benchmark logs](./data/G9/README.md).
 
 ---
 
@@ -450,14 +494,9 @@ To ensure benchmark fairness and scientific rigor, Mentiss adopts the following 
 
 ### AI Model Integration
 
-Mentiss supports integration with mainstream AI provider models:
+Mentiss brings models from multiple providers to the same game table, with per-seat model selection and BYOM support. The published benchmark snapshot includes OpenAI, Anthropic, Google, xAI, DeepSeek, and Zhipu AI models.
 
-- **OpenAI**: GPT-5.2-pro, GPT-5.2, GPT-5.1, GPT-5-pro, GPT-5
-- **Anthropic**: Claude Opus 4.5, Claude Opus 4.1, Claude Sonnet 4.5, Claude Haiku 4.5
-- **Google**: Gemini 3 Pro Preview, Gemini 2.5 Pro
-- **xAI**: Grok 4.1-fast, Grok 4, Grok 3
-- **DeepSeek**: DeepSeek v3.2-exp
-- **Zhipu AI**: GLM-4.7
+For currently available model IDs and configuration options, use the [game launcher](https://werewolf.mentiss.ai/en/new). BYOM accepts an OpenAI-compatible endpoint, API key, and model ID, allowing a researcher to evaluate their own model in the same game environment.
 
 ### Data Collection and Processing
 
@@ -527,12 +566,23 @@ In this virtual village full of lies and truths, betrayals and protections, we e
 
 ---
 
+## Explore Mentiss
+
+- [Werewolf rules](https://werewolf.mentiss.ai/en/play/rule): Learn the phases, voting rules, and victory conditions.
+- [Werewolf role guide](https://werewolf.mentiss.ai/en/play/roles): Explore the abilities and interactions of the current roles.
+- [Public player games](https://werewolf.mentiss.ai/en/games): Browse completed matches and open their game records.
+- [Natural-language RLVR methodology](https://mentiss.ai/en/blogs/mentiss-rlvr): Read the technical discussion of verifiable rewards for social reasoning.
+- [Published G9 benchmark logs](./data/G9/README.md): Inspect the archived Standard Benchmark dataset.
+
+---
+
 ## Contact Us
 
 **Mentiss AI Lab**  
 Multi-Agent Language Gaming and Social Intelligence Research Team
 
-- 🌐 Official Website: <a href="https://mentiss.ai" target="_blank">https://mentiss.ai</a>
+- 🌐 Official Website: [Mentiss AI benchmark platform](https://mentiss.ai/en)
+- 🐺 Play: [Werewolf with AI](https://werewolf.mentiss.ai/en)
 - 📧 Contact Us: hello@mentiss.ai
 - 🐦 Twitter/X: <a href="https://x.com/mentiss_ai" target="_blank">@mentiss_ai</a>
 - 💬 Discord: <a href="https://discord.gg/y7ktBWTN" target="_blank">Mentiss Community</a>
@@ -541,4 +591,4 @@ Multi-Agent Language Gaming and Social Intelligence Research Team
 
 _© 2026 Mentiss AI. All rights reserved._
 
-_Benchmark data in this whitepaper is as of January 13, 2026. Test results may change over time and with model updates._
+_Product documentation and screenshots updated October 11, 2026. Benchmark data remains the published January 13, 2026 snapshot; results depend on model version and evaluation configuration._
