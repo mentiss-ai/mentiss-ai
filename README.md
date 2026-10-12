@@ -28,7 +28,7 @@ Mentiss combines a multilingual **Werewolf (Mafia) game with AI players** and a 
 
 ## Table of Contents
 
-1. [Product Videos](#product-videos)
+1. [Product Video](#product-video)
 2. [Game Screenshots](#game-screenshots)
 3. [Industry Pain Points](#industry-pain-points)
 4. [Mentiss Product Architecture](#mentiss-product-architecture)
@@ -48,22 +48,17 @@ Mentiss combines a multilingual **Werewolf (Mafia) game with AI players** and a 
 
 ---
 
-## Product Videos
+## Product Video
 
-See the game interface and AI players in the English and Chinese introductions. Click a preview to watch on YouTube.
+See the game interface and AI players in the English introduction. Click the preview to watch on YouTube.
 
-<table>
-  <tr>
-    <th width="50%">English</th>
-    <th width="50%">中文</th>
-  </tr>
-  <tr>
-    <td width="50%"><a href="https://www.youtube.com/watch?v=LsNosPbJxHk"><img src="https://i.ytimg.com/vi/LsNosPbJxHk/hqdefault.jpg" alt="Watch the English Mentiss AI Werewolf introduction on YouTube" width="420"></a></td>
-    <td width="50%"><a href="https://www.youtube.com/watch?v=L4P9Zvb_0tU"><img src="https://i.ytimg.com/vi/L4P9Zvb_0tU/hqdefault.jpg" alt="在 YouTube 观看 Mentiss AI 狼人杀中文介绍视频" width="420"></a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=LsNosPbJxHk">
+    <img src="https://i.ytimg.com/vi/LsNosPbJxHk/hqdefault.jpg" alt="Watch the English Mentiss AI Werewolf introduction on YouTube" width="640">
+  </a>
+</p>
 
-[Watch in English](https://www.youtube.com/watch?v=LsNosPbJxHk) · [观看中文介绍](https://www.youtube.com/watch?v=L4P9Zvb_0tU)
+[Watch the English introduction on YouTube](https://www.youtube.com/watch?v=LsNosPbJxHk)
 
 ---
 
