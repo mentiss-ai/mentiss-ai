@@ -50,20 +50,15 @@ Mentiss 将多语言的 **AI 狼人杀游戏**与**大语言模型社会智能�
 
 ## 产品介绍视频
 
-通过中英文介绍视频了解游戏界面与 AI 玩家。点击预览图即可在 YouTube 观看。
+通过中文介绍视频了解游戏界面与 AI 玩家。点击预览图即可在 YouTube 观看。
 
-<table>
-  <tr>
-    <th width="50%">English</th>
-    <th width="50%">中文</th>
-  </tr>
-  <tr>
-    <td width="50%"><a href="https://www.youtube.com/watch?v=LsNosPbJxHk"><img src="https://i.ytimg.com/vi/LsNosPbJxHk/hqdefault.jpg" alt="Watch the English Mentiss AI Werewolf introduction on YouTube" width="420"></a></td>
-    <td width="50%"><a href="https://www.youtube.com/watch?v=L4P9Zvb_0tU"><img src="https://i.ytimg.com/vi/L4P9Zvb_0tU/hqdefault.jpg" alt="在 YouTube 观看 Mentiss AI 狼人杀中文介绍视频" width="420"></a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=L4P9Zvb_0tU">
+    <img src="https://i.ytimg.com/vi/L4P9Zvb_0tU/hqdefault.jpg" alt="在 YouTube 观看 Mentiss AI 狼人杀中文介绍视频" width="640">
+  </a>
+</p>
 
-[观看中文介绍](https://www.youtube.com/watch?v=L4P9Zvb_0tU) · [Watch in English](https://www.youtube.com/watch?v=LsNosPbJxHk)
+[在 YouTube 观看中文介绍](https://www.youtube.com/watch?v=L4P9Zvb_0tU)
 
 ---
 
