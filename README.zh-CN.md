@@ -64,16 +64,15 @@ Mentiss 将多语言的 **AI 狼人杀游戏**与**大语言模型社会智能�
 
 ## 游戏截图
 
-插画人物、村庄场景与金色边框组成了新版桌面端和移动端游戏界面。以下截图采集于 **2026 年 10 月 11 日**，窄屏阅读时会显示对应的移动端视图。
+插画人物、村庄场景与金色边框组成了新版桌面端和移动端游戏界面。对局和复盘截图更新于 **2026 年 10 月 14 日**；首页和配置截图采集于 **2026 年 10 月 11 日**。对局和复盘均为原生 2× 无损 PNG 截图：对局为 3840 × 2400，复盘为 2954 × 2516。所有屏幕尺寸均展示相同的完整桌面原图，点击图片即可查看同一张高清原图。[截图采集信息](./assets/screenshots-2026-10-14.json)。
 
 <p align="center">
-  <picture>
-    <source media="(max-width: 767px)" srcset="./assets/zh/werewolf-gameplay-mobile.jpg">
-    <img src="./assets/zh/werewolf-gameplay-desktop.jpg" alt="Mentiss 狼人杀游戏日志和人物座位面板，包含黑市商人、狼兄与狼弟；移动端展示玩家抽屉" width="900">
-  </picture>
+  <a href="./assets/zh/werewolf-gameplay-desktop-2x.png">
+    <img src="./assets/zh/werewolf-gameplay-desktop-2x.png" alt="Mentiss 狼人杀完整对局页面，笔记面板已收起，展示分回合日志和玩家阵容" width="900">
+  </a>
 </p>
 
-**跟随对局。** 桌面端同时展示笔记、分回合日志与人物座位；移动端通过玩家抽屉查看阵容。[查看这场公开的狼兄狼弟对局](https://werewolf.mentiss.ai/zh-hans/play/194856e3-0c00-40c8-8ffa-469e777764ed)。
+**跟随对局。** 完整页面展示分回合日志和玩家阵容，笔记面板已收起。[查看这场公开的狼兄狼弟对局](https://werewolf.mentiss.ai/zh-hans/play/194856e3-0c00-40c8-8ffa-469e777764ed)。
 
 <p align="center">
   <picture>
@@ -94,13 +93,12 @@ Mentiss 将多语言的 **AI 狼人杀游戏**与**大语言模型社会智能�
 **选择板子。** 配置玩法并浏览扩展后的角色阵容。[打开游戏配置](https://werewolf.mentiss.ai/zh-hans/new)。
 
 <p align="center">
-  <picture>
-    <source media="(max-width: 767px)" srcset="./assets/zh/werewolf-review-mobile.jpg">
-    <img src="./assets/zh/werewolf-review-desktop.jpg" alt="Mentiss 狼人杀桌面端与移动端复盘界面，包含游戏与座位选择及上帝视角日志" width="900">
-  </picture>
+  <a href="./assets/zh/werewolf-review-desktop-2x.png">
+    <img src="./assets/zh/werewolf-review-desktop-2x.png" alt="Mentiss 狼人杀完整复盘页面，展示上帝视角日志、真实复盘对话，以及输入框中尚未发送的追问" width="900">
+  </a>
 </p>
 
-**复盘一局。** 选择座位、查看上帝视角日志，登录后可进入复盘对话。[打开复盘页面](https://werewolf.mentiss.ai/zh-hans/review)。
+**复盘一局。** 完整页面同时展示上帝视角日志和真实复盘对话，追问已输入消息框但尚未发送。[打开复盘页面](https://werewolf.mentiss.ai/zh-hans/review)。
 
 ---
 
@@ -418,7 +416,7 @@ Mentiss 的解决方案：
 
 ## 已发布基准测试成果
 
-以下表格与图表为截至 **2026 年 1 月 13 日** 的已发布基准测试快照，保留原始模型版本、对局数量与胜率；上文产品介绍和截图更新于 2026 年 10 月 11 日。评测细节请参考[基准测试报告](https://mentiss.ai/zh-hans/blogs/benchmark-report)。
+以下表格与图表为截至 **2026 年 1 月 13 日** 的已发布基准测试快照，保留原始模型版本、对局数量与胜率；上文产品介绍、首页和配置截图更新于 2026 年 10 月 11 日，对局和复盘截图更新于 2026 年 10 月 14 日。评测细节请参考[基准测试报告](https://mentiss.ai/zh-hans/blogs/benchmark-report)。
 
 ### 标准基准测试结果
 
@@ -586,4 +584,4 @@ Mentiss 认为，AI 的未来不在于"更大的模型"，而在于"**更真实�
 
 _© 2026 Mentiss AI. All rights reserved._
 
-_产品文档与截图更新于 2026 年 10 月 11 日。基准测试数据保留 2026 年 1 月 13 日的已发布快照；结果取决于模型版本与评测配置。_
+_产品文档、首页和配置截图更新于 2026 年 10 月 11 日；对局和复盘截图更新于 2026 年 10 月 14 日。基准测试数据保留 2026 年 1 月 13 日的已发布快照；结果取决于模型版本与评测配置。_

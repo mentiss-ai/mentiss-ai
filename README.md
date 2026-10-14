@@ -64,16 +64,15 @@ See the game interface and AI players in the English introduction. Click the pre
 
 ## Game Screenshots
 
-The live game brings illustrated characters, a village setting, and gold-framed controls to desktop and mobile. These screenshots were captured on **October 11, 2026**; smaller screens show the mobile views.
+The live game brings illustrated characters, a village setting, and gold-framed controls to desktop and mobile. Gameplay and review screenshots were refreshed on **October 14, 2026**; home and setup screenshots were captured on **October 11, 2026**. Gameplay and review are native 2× lossless PNG captures: 3840 × 2400 for gameplay and 2954 × 2516 for review. Every screen size displays the same complete desktop originals; click either image to open that same HD original at full size. [Capture details](./assets/screenshots-2026-10-14.json).
 
 <p align="center">
-  <picture>
-    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-gameplay-mobile.jpg">
-    <img src="./assets/en/werewolf-gameplay-desktop.jpg" alt="Mentiss Werewolf game log and illustrated player roster, including Magician and the Wolf Brothers; mobile view shows the Players drawer" width="900">
-  </picture>
+  <a href="./assets/en/werewolf-gameplay-desktop-2x.png">
+    <img src="./assets/en/werewolf-gameplay-desktop-2x.png" alt="Complete Mentiss Werewolf game page with Notes collapsed, round-by-round game log, and player roster" width="900">
+  </a>
 </p>
 
-**Follow the game.** Desktop combines notes, round-by-round logs, and seat portraits; mobile opens the roster in a Players drawer. [View this public Brawl match](https://werewolf.mentiss.ai/en/play/9d24d447-309a-40ed-9a36-0edc171f22b6).
+**Follow the game.** The complete page shows the round-by-round log and player roster with Notes collapsed. [View this public Brawl match](https://werewolf.mentiss.ai/en/play/9d24d447-309a-40ed-9a36-0edc171f22b6).
 
 <p align="center">
   <picture>
@@ -94,13 +93,12 @@ The live game brings illustrated characters, a village setting, and gold-framed 
 **Choose your board.** Select a game configuration and explore the expanded role lineup. [Open game setup](https://werewolf.mentiss.ai/en/new).
 
 <p align="center">
-  <picture>
-    <source media="(max-width: 767px)" srcset="./assets/en/werewolf-review-mobile.jpg">
-    <img src="./assets/en/werewolf-review-desktop.jpg" alt="Mentiss Werewolf review interface with game and seat selection and God View log on desktop and mobile" width="900">
-  </picture>
+  <a href="./assets/en/werewolf-review-desktop-2x.png">
+    <img src="./assets/en/werewolf-review-desktop-2x.png" alt="Complete Mentiss Werewolf review page with God View log, a real review conversation, and an unsent follow-up in the message composer" width="900">
+  </a>
 </p>
 
-**Review a match.** Select a seat, inspect the God View log, and access the review conversation after signing in. [Open the review page](https://werewolf.mentiss.ai/en/review).
+**Review a match.** The complete page shows the God View log alongside a real review conversation, with a follow-up typed in the composer but not sent. [Open the review page](https://werewolf.mentiss.ai/en/review).
 
 ---
 
@@ -418,7 +416,7 @@ The interface and game/log language options include Simplified Chinese, English,
 
 ## Published Benchmark Results
 
-The tables and charts below are the **published benchmark snapshot as of January 13, 2026**. They retain the original model versions, game counts, and win rates; the product and screenshots above were updated on October 11, 2026. See the [benchmark report](https://mentiss.ai/en/blogs/benchmark-report) for the published evaluation details.
+The tables and charts below are the **published benchmark snapshot as of January 13, 2026**. They retain the original model versions, game counts, and win rates; the product documentation and home/setup screenshots were updated on October 11, 2026, and gameplay/review screenshots on October 14, 2026. See the [benchmark report](https://mentiss.ai/en/blogs/benchmark-report) for the published evaluation details.
 
 ### Standard Benchmark Results
 
@@ -586,4 +584,4 @@ Multi-Agent Language Gaming and Social Intelligence Research Team
 
 _© 2026 Mentiss AI. All rights reserved._
 
-_Product documentation and screenshots updated October 11, 2026. Benchmark data remains the published January 13, 2026 snapshot; results depend on model version and evaluation configuration._
+_Product documentation and home/setup screenshots updated October 11, 2026; gameplay/review screenshots updated October 14, 2026. Benchmark data remains the published January 13, 2026 snapshot; results depend on model version and evaluation configuration._
